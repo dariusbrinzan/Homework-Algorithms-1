@@ -1,0 +1,21 @@
+322CA - Brinzan Darius Ionut - Tema 1 - PA
+
+1. Walsh -> pentru fiecare (x, y) verific in ce cadran al matricei ma incadrez (1, 2, 3 sau 4). Prima oara verific
+in care dintre cele 4 cadrane de dimensiune n/2 * n/2 ma aflu si am practic conditii pentru fiecare sfert din matricea mea.
+x < n / 2 y < n / 2 - primul cadran, x < n / 2 y > n / 2 cadranul 2, x > n / 2 y < n / 2 cadranul 3 iar la cadranul 4
+este inversat de aia fac negatie . Iar la final la afisare eu o sa ajung cu x si y sa fie 0 sau 1, iar valoarea mea dorita
+ar fi un & intre cele 2 valori.
+
+2. Statistics -> imi iau un map care ma ajuta sa retin fiecare aparitie, dupa care parcurg iar cu un for si adaug in 
+vectorul meu litera care are aparitia mai mare decat string.size() / 2 din cuvantul meu . Sortez crescator sirul dupa care parcurg,
+de la n - 1 si verific daca suma mea > 0, adaug in suma si cresc contorul care imi returneaza numarul de cuvinte care satisfac
+cerinta .
+
+3. Prinel -> Pentru inceput mi-am calculat divizorii folosindu-ma de ciurul lui eratostene dupa care imi calculez numarul
+de pasi pentru a ajunge la valoarea mea dorita, deci practic parcurg divizorii si mereu extrag minimul a ce am avut inainte si 
+practic ce am acum. Dupa ce am calculat asta eu trebuie sa vad care este totalul weight-ului bag-ului meu. Deci calculez costul total
+si am aplicat logica de la problema rucsac unde trebuie practic sa iau numarul minim de pasi ca sa ma incadrez in target-ul meu.
+
+Referinte :
+1. https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+2. https://ocw.cs.pub.ro/courses/pa/laboratoare/laborator-03
